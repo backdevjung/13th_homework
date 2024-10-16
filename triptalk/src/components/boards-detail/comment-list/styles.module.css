@@ -1,0 +1,27 @@
+.commentListBody {
+  display: flex;
+  width: 1920px;
+  padding: 40px 320px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.commentListContainer {
+  display: flex;
+  width: 1280px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.forwardTitleText {
+  color: var(--gray-700, #5f5f5f);
+
+  /* l_14_20 */
+  font-family: "Pretendard Variable";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 142.857% */
+}

@@ -1,0 +1,22 @@
+import { useState } from "react";
+
+const useModalSetting = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  return {
+    isModalOpen,
+    setIsModalOpen
+};
+
+export default function ModalSetting({ children }) {
+    const {isModalOpen, setIsModalOpen} = useModalSetting()
+
+  return (
+    <>
+      {children}
+      <Modal open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+        <p>{modalContent}</p>
+      </Modal>
+    </>
+  );
+}
